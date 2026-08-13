@@ -1248,7 +1248,7 @@ export default function FluidShaderBackground() {
     </>
   );
 
-  if (pathname === "/team") return null;
+  if (pathname === "/team" || pathname === "/banner") return null;
 
   return (
     <div

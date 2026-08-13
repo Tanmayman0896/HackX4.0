@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { usePathname } from "next/navigation";
 
 export interface NavbarFadeOverlayProps {
   /**
@@ -76,6 +77,9 @@ export const NavbarFadeOverlay: React.FC<NavbarFadeOverlayProps> = ({
 
   const isCustomHeight = height !== 150;
   const heightStyle = isCustomHeight ? { height: `${height}px` } : {};
+  const pathname = usePathname();
+
+  if (pathname === "/banner") return null;
 
   return (
     <div

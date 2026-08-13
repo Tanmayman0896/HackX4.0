@@ -9,7 +9,7 @@ export default function BannerPage() {
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black">
       <Image
-        src="/assets/logos/previous-year-mail-banner.svg"
+        src="/assets/logos/previous-year-mail-banner.png"
         alt="Previous Year Mail Banner"
         fill
         className="object-contain"

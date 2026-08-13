@@ -381,6 +381,8 @@ export default function Navbar() {
     },
   }), [animationSpeed]);
 
+  if (pathname === "/banner") return null;
+
   return (
     <>
       {/* Sleek Floating Header Bar */}
