@@ -46,12 +46,6 @@ export default function Ambassador() {
   const heroRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
-    // Normalize scroll behavior on mobile viewports to prevent aggressive hard-scroll skipping
-    const mm = gsap.matchMedia();
-    mm.add("(max-width: 767px)", () => {
-      ScrollTrigger.normalizeScroll({ allowNestedScroll: true });
-    });
-
     const lines = gsap.utils.toArray<HTMLElement>(".hero-line", heroRef.current);
     if (lines.length > 0) {
       gsap.fromTo(
