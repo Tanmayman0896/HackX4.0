@@ -2,9 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
 import Stats from "@/components/Stats";
 import SdgComponent from "@/components/sdg";
 import SdgMarquee from "@/components/SdgMarquee";
@@ -13,16 +10,7 @@ import GlassPill from "@/components/GlassPill";
 import JoinHackathon from "@/components/JoinHackathon";
 import PrizePoolCircle from "@/components/PrizePoolCircle";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function Home() {
-  useGSAP(() => {
-    // Normalize scroll behavior on mobile viewports so Chrome address bar stays static
-    const mm = gsap.matchMedia();
-    mm.add("(max-width: 767px)", () => {
-      ScrollTrigger.normalizeScroll({ allowNestedScroll: true });
-    });
-  });
   // Smooth staggered entry animations
   const containerVariants = {
     hidden: {},

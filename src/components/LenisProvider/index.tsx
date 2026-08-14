@@ -12,11 +12,19 @@ export default function LenisProvider({ children }: { children: React.ReactNode 
     // Register ScrollTrigger plugin
     gsap.registerPlugin(ScrollTrigger);
 
-    // Normalize mobile touch scroll behavior so Chrome address bar stays static on mobile
+    // Normalize mobile touch scroll behavior so Chrome address bar stays static on mobile globally
     const mm = gsap.matchMedia();
     mm.add("(max-width: 767px)", () => {
-      ScrollTrigger.normalizeScroll({ allowNestedScroll: true });
+      ScrollTrigger.normalizeScroll({ allowNestedScroll: true, lockAxis: false });
+      return () => {
+        ScrollTrigger.normalizeScroll(false);
+      };
     });
+
+    const lenis = lenisRef.current?.lenis;
+    if (lenis) {
+      lenis.on("scroll", ScrollTrigger.update);
+    }
 
     // Sync Lenis scroll updates with the GSAP ticker
     function update(time: number) {
@@ -32,8 +40,12 @@ export default function LenisProvider({ children }: { children: React.ReactNode 
     ScrollTrigger.refresh();
 
     return () => {
+      if (lenis) {
+        lenis.off("scroll", ScrollTrigger.update);
+      }
       gsap.ticker.remove(update);
       mm.revert();
+      ScrollTrigger.normalizeScroll(false);
     };
   }, []);
 

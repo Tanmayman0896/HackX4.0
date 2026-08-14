@@ -18,7 +18,7 @@ const MENU_ITEMS = [
   { label: "About Us", href: "/about" },
   { label: "Timeline", href: "/timeline" },
   { label: "Ambassador", href: "/ambassador" },
-  { label: "Team", href: "/team" },
+ // { label: "Team", href: "/team" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
 ] as const;
