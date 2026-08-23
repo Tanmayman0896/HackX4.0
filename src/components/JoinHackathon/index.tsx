@@ -32,7 +32,7 @@ const BUTTON_STYLE: React.CSSProperties = {
 export default function JoinHackathon({
   title = "Join the",
   highlightText = "Hackathon!",
-  href = "#",
+  href = "https://hackxmuj.com/register",
   buttonText = "Register now",
 }: JoinHackathonProps) {
   return (
