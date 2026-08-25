@@ -2,45 +2,7 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
-
-const milestones = [
-  {
-    number: "1.",
-    title: "REGISTRATION & CHECK-IN",
-    time: "09:00 AM - 10:30 AM",
-    description: "Get your badges, goodie bags, and settle into your hacking stations."
-  },
-  {
-    number: "2.",
-    title: "OPENING CEREMONY",
-    time: "10:30 AM - 11:30 AM",
-    description: "Keynote speech, theme reveals, guidelines briefing, and official kickoff."
-  },
-  {
-    number: "3.",
-    title: "HACKING BEGINS",
-    time: "12:00 PM",
-    description: "Brainstorming session, repository initialization, and design begins."
-  },
-  {
-    number: "4.",
-    title: "MENTORING ROUND 1",
-    time: "04:00 PM - 06:00 PM",
-    description: "First interaction with industry experts to refine prototypes and validate ideas."
-  },
-  {
-    number: "5.",
-    title: "MIDNIGHT SNACKS & FUN",
-    time: "12:00 AM",
-    description: "Unwind with mini-games, dynamic music, and late-night caffeine refills."
-  },
-  {
-    number: "6.",
-    title: "FINAL PITCH & JUDGING",
-    time: "09:00 AM - 12:00 PM",
-    description: "Project submissions, final presentations to the panel, and declaration of winners."
-  }
-];
+import { milestones } from "@/data/timeline";
 
 export default function Timeline() {
   const [mounted, setMounted] = useState(false);
@@ -111,12 +73,10 @@ export default function Timeline() {
   }, [mounted, scrollYProgress]);
 
   // Dimension Constants
-  const DESKTOP_HEIGHT = 5100;
   const DESKTOP_STEP = 850;
-  const MOBILE_HEIGHT = 1680;
-  const MOBILE_STEP = 280;
+  const MOBILE_STEP = 300;
 
-  const totalHeight = isMobile ? MOBILE_HEIGHT : DESKTOP_HEIGHT;
+  const totalHeight = milestones.length * (isMobile ? MOBILE_STEP : DESKTOP_STEP);
   const stepHeight = isMobile ? MOBILE_STEP : DESKTOP_STEP;
   const amplitude = 150;
 
@@ -151,8 +111,9 @@ export default function Timeline() {
     <section
       id="timeline-section"
       ref={containerRef}
+      style={{ height: `${totalHeight}px` }}
       className={`relative w-full bg-transparent text-white select-none overflow-visible pt-16 pb-32 ${
-        isMobile ? "h-[1680px] mb-12" : "h-[5100px] mb-32"
+        isMobile ? "mb-12" : "mb-32"
       }`}
     >
       {/* Central SVG Timeline Line */}
