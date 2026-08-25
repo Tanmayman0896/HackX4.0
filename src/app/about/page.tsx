@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import WhyHackX from "@/components/WhyHackX";
 import Stats from "@/components/Stats";
 import OurPartners from "@/components/OurPartners";
+import OurCommunityPartners from "@/components/OurCommunityPartners";
 
 export default function AboutPage() {
   const containerVariants = {
@@ -107,6 +108,9 @@ export default function AboutPage() {
 
       {/* Our Partners Section */}
       <OurPartners />
+
+      {/* Our Community Partners Section */}
+      <OurCommunityPartners />
     </div>
   );
 }

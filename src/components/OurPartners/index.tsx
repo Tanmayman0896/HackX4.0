@@ -232,7 +232,7 @@ export default function OurPartners() {
                 style={{ fontSize: "clamp(2.5rem, 7vw, 7.5rem)" }}
               >
                 <span className="block text-white">OUR</span>
-                <span className="block text-white">Previous PARTNERS</span>
+                <span className="block text-white">PARTNERS</span>
               </h2>
 
               <p className="mt-8 max-w-lg text-white/60 text-sm md:text-base font-sans font-normal leading-relaxed text-center">
