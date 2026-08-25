@@ -10,7 +10,7 @@ export default function Sponsors() {
 
   return (
     <section className="relative w-full mt-12 md:-mt-24 pt-8 md:pt-0 pb-16 md:pb-24 px-4 sm:px-8 md:px-16 flex flex-col items-center justify-center bg-transparent text-white overflow-hidden select-none">
-      {/* Top SPONSORS Heading */}
+      {/* Top OUR PARTNERS Heading */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -19,7 +19,7 @@ export default function Sponsors() {
         className="mb-4 md:mb-8"
       >
         <h3 className="font-sans font-bold uppercase tracking-[0.25em] text-sm sm:text-base md:text-xl text-white/90">
-          SPONSORS
+          OUR PARTNERS
         </h3>
       </motion.div>
 
