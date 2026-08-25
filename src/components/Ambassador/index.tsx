@@ -160,6 +160,7 @@ export default function Ambassador() {
           highlightText="Campus Ambassador!"
           href="#apply"
           buttonText="Register now"
+          subText=""
         />
       </section>
 

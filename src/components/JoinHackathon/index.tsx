@@ -9,6 +9,7 @@ interface JoinHackathonProps {
   highlightText?: string;
   href?: string;
   buttonText?: string;
+  subText?: string;
 }
 
 const CARD_STYLE: React.CSSProperties = {
@@ -34,6 +35,7 @@ export default function JoinHackathon({
   highlightText = "Hackathon!",
   href = "https://hackxmuj.com/register",
   buttonText = "Register now",
+  subText = "Round 1 registration is free. Selected teams will need to pay ₹999 per team.",
 }: JoinHackathonProps) {
   return (
     <section
@@ -73,23 +75,31 @@ export default function JoinHackathon({
             </h2>
           </div>
 
-          <a
-            href={href}
-            className="group relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full border px-5 py-3 font-sans text-[11px] font-extrabold uppercase tracking-[0.16em] text-[#10051f] hover:-translate-y-1 hover:border-white hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:px-6"
-            style={BUTTON_STYLE}
-            aria-label={`${buttonText} - ${title} ${highlightText}`}
-          >
-            <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/80 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
-            <span className="relative">{buttonText}</span>
-            <svg
-              className="relative ml-3 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
-              viewBox="0 0 16 16"
-              fill="none"
-              aria-hidden="true"
+          <div className="flex flex-col items-start md:items-end gap-2 shrink-0">
+            <a
+              href={href}
+              className="group relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full border px-5 py-3 font-sans text-[11px] font-extrabold uppercase tracking-[0.16em] text-[#10051f] hover:-translate-y-1 hover:border-white hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:px-6"
+              style={BUTTON_STYLE}
+              aria-label={`${buttonText} - ${title} ${highlightText}`}
             >
-              <path d="M2 8h11M9 3l5 5-5 5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </a>
+              <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/80 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+              <span className="relative">{buttonText}</span>
+              <svg
+                className="relative ml-3 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path d="M2 8h11M9 3l5 5-5 5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+
+            {subText && (
+              <span className="text-[10px] sm:text-[11px] font-sans text-white/70 tracking-normal text-left md:text-right max-w-[280px] leading-tight">
+                {subText}
+              </span>
+            )}
+          </div>
         </div>
       </motion.div>
     </section>
