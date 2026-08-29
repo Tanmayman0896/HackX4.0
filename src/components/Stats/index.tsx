@@ -23,12 +23,6 @@ const STATS_DATA = [
   {
     id: "03",
     title: "projects",
-    caption: "Hundreds of projects have been built at HackX, spanning AI, blockchain, IoT, sustainability and beyond. Real problems, real solutions.",
-    image: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1785920143453_k93m3g.avif",
-  },
-  {
-    id: "04",
-    title: "hours",
     caption: "36 hours of non-stop hacking, mentoring and building. No sleep, all code. This is where ideas become reality.",
     image: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1785920153789_2h6o4q.avif",
   }

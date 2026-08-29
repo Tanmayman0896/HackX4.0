@@ -5,11 +5,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 interface JoinHackathonProps {
+  id?: string;
   title?: string;
   highlightText?: string;
   href?: string;
   buttonText?: string;
   subText?: string;
+  className?: string;
 }
 
 const CARD_STYLE: React.CSSProperties = {
@@ -31,16 +33,20 @@ const BUTTON_STYLE: React.CSSProperties = {
 };
 
 export default function JoinHackathon({
+  id = "register",
   title = "Join the",
   highlightText = "Hackathon!",
   href = "https://hackxmuj.com/register",
   buttonText = "Register now",
   subText = "Round 1 registration is free. Selected teams will need to pay ₹999 per team.",
+  className,
 }: JoinHackathonProps) {
   return (
     <section
-      id="register"
-      className="relative w-full overflow-hidden px-4 pt-2 pb-0 sm:px-8 md:px-16 md:pt-2 md:pb-0 -mb-8 md:-mb-14"
+      id={id}
+      className={`relative w-full overflow-hidden px-4 pt-2 pb-0 sm:px-8 md:px-16 ${
+        className !== undefined ? className : "md:pt-2 md:pb-0 -mb-8 md:-mb-14"
+      }`}
       aria-labelledby="join-hackathon-title"
     >
       <motion.div
