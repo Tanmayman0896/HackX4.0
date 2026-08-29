@@ -130,7 +130,7 @@ export default function Home() {
             className="block md:hidden mt-6 md:mt-8"
           >
             <a
-              href="#register"
+              href="https://www.hackxmuj.com/register"
               className="inline-block transition-transform duration-300 hover:scale-105 active:scale-95 cursor-pointer"
             >
               <GlassPill className="text-[13px] sm:text-[15px] md:text-[16px] tracking-[0.2em] font-bold px-8 py-3.5 hover:bg-white/20">

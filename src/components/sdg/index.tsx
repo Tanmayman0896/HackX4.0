@@ -9,60 +9,61 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 interface Brand {
   name: string;
+  displayName?: React.ReactNode;
   logo: string | React.ReactNode;
   description: string;
 }
 
 const brands: Brand[] = [
   {
+    name: "Fintech",
+    logo: "/assets/themes/fintech.svg",
+    description: "Empowering decentralized finance, digital transactions, and next-gen banking systems.",
+  },
+  {
+    name: "Edtech",
+    logo: "/assets/themes/edtech.svg",
+    description: "Transforming learning through immersive technologies, smart classrooms, and accessible education.",
+  },
+  {
     name: "Healthcare",
     logo: "/assets/themes/healthcare.svg",
     description: "Ensuring healthy lives, medical innovation, and digital health solutions for all.",
   },
   {
-    name: "EdTech",
-    logo: "/assets/themes/edtech.svg",
-    description: "Transforming learning through immersive technologies, smart classrooms, and accessible education.",
-  },
-  {
-    name: "FinTech",
-    logo: "/assets/themes/fintech.svg",
-    description: "Empowering decentralized finance, digital transactions, and next-gen banking systems.",
-  },
-  {
-    name: "Environment",
-    logo: "/assets/themes/enviroment.svg",
-    description: "Developing sustainable technology, green energy, and environmental protection systems.",
-  },
-  {
-    name: "Cybersecurity",
-    logo: "/assets/themes/cybersecurity.svg",
-    description: "Securing digital infrastructure, data privacy, and advanced threat intelligence systems.",
-  },
-  {
-    name: "Blockchain",
+    name: "Blockchain for Social Good",
     logo: "/assets/themes/blockchian.svg",
-    description: "Building decentralized protocols, Web3 ecosystems, and transparent ledger solutions.",
+    description: "Building decentralized protocols, Web3 ecosystems, and transparent ledger solutions for social impact.",
   },
   {
-    name: "Defence",
-    logo: "/assets/themes/defence.svg",
-    description: "Advancing defense tech, autonomous security, and strategic intelligence systems.",
-  },
-  {
-    name: "Disaster Tech",
+    name: "Smart Infra",
     logo: "/assets/themes/disaster.svg",
-    description: "Creating early warning systems, resilient infrastructure, and crisis response tech.",
+    description: "Creating intelligent urban infrastructure, smart mobility, IoT sensor grids, and resilient city systems.",
+  },
+  {
+    name: "Supply Chain and Logistics",
+    logo: "/assets/themes/supplychain.svg",
+    description: "Optimizing global logistics, smart tracking, warehouse automation, and resilient supply networks.",
+  },
+  {
+    name: "Environmental Sustainability",
+    displayName: (
+      <>
+        Environmental <br />Sustainability
+      </>
+    ),
+    logo: "/assets/themes/enviroment.svg",
+    description: "Developing sustainable technology, green energy, waste reduction, and environmental protection systems.",
+  },
+  {
+    name: "Cybersecurity & Defense System",
+    logo: "/assets/themes/cybersecurity.svg",
+    description: "Securing critical digital infrastructure, data privacy, threat intelligence, and defense systems.",
   },
   {
     name: "Open Innovation",
     logo: "/assets/themes/open_innovation.svg",
-    description: "Fostering unrestricted cross-disciplinary innovation and creative problem solving.",
-  },
-  {
-    name: "Supply Chain",
-    logo: "/assets/themes/supplychain.svg",
-    description: "Optimizing global logistics, smart tracking, and resilient supply networks.",
+    description: "Fostering unrestricted cross-disciplinary innovation, moonshot ideas, and creative problem solving.",
   },
 ];
 
@@ -169,7 +170,7 @@ export default function SdgComponent() {
     // Radius tuned for viewport
     const R = isMobile ? 580 : 850;
     // Spacing angle in degrees
-    const angleDeg = isMobile ? 12 : 7.5;
+    const angleDeg = isMobile ? 14 : 9.5;
     const angleRad = (absDiff * angleDeg * Math.PI) / 180;
 
     // x shifts LEFT as distance from center increases
@@ -407,7 +408,7 @@ export default function SdgComponent() {
         className="hidden md:flex w-full h-screen-stable relative items-center opacity-0"
       >
         {/* Brand Stack (Arc Motion Area) */}
-        <div className="absolute left-[24vw] top-0 h-full w-[50vw] flex items-center justify-start z-20 pointer-events-none">
+        <div className="absolute left-[22vw] lg:left-[24vw] top-0 h-full w-[48vw] flex items-center justify-start z-20 pointer-events-none">
           <div ref={stackGroupRef} className="relative w-full">
             {brands.map((brand, idx) => (
               <div
@@ -415,7 +416,7 @@ export default function SdgComponent() {
                 ref={(el) => {
                   brandRefs.current[idx] = el;
                 }}
-                className="absolute left-0 font-sans font-semibold text-[5vw] lg:text-[4.5vw] tracking-normal leading-tight text-[#f9f6f0] select-none cursor-pointer whitespace-nowrap origin-left pointer-events-auto max-w-full overflow-hidden text-ellipsis"
+                className="absolute left-0 font-sans font-semibold text-[4.6vw] lg:text-[4.2vw] tracking-normal leading-[1.04] text-[#f9f6f0] select-none cursor-pointer origin-left pointer-events-auto max-w-[42vw] overflow-visible"
                 onClick={() => scrollToBrandIndex(idx, false)}
                 style={{
                   transformStyle: "preserve-3d",
@@ -423,7 +424,7 @@ export default function SdgComponent() {
                   color: "#f9f6f0",
                 }}
               >
-                {brand.name}
+                {brand.displayName || brand.name}
               </div>
             ))}
           </div>
@@ -444,7 +445,7 @@ export default function SdgComponent() {
                 ref={(el) => {
                   cardRefs.current[idx] = el;
                 }}
-                className="absolute left-0 w-full grid grid-cols-[1.2fr_1.6fr] items-center gap-10 pointer-events-none"
+                className="absolute left-0 w-full grid grid-cols-[1.2fr_1.6fr] items-center gap-8 lg:gap-10 pointer-events-none"
               >
                 <div className="flex items-center justify-start h-full max-h-[85px]">
                   {typeof brand.logo === "string" ? (
@@ -472,7 +473,7 @@ export default function SdgComponent() {
         className="block md:hidden w-full h-screen-stable relative items-center opacity-0 overflow-hidden select-none bg-transparent"
       >
         {/* Mobile Arc Motion Area */}
-        <div className="absolute left-[10vw] sm:left-[13vw] top-0 h-full w-[44vw] flex items-center justify-start z-20 pointer-events-none pt-16">
+        <div className="absolute left-[6vw] sm:left-[8vw] top-0 h-full w-[46vw] flex items-center justify-start z-20 pointer-events-none pt-16">
           <div ref={mobileStackGroupRef} className="relative w-full">
             {brands.map((brand, idx) => (
               <div
@@ -480,7 +481,7 @@ export default function SdgComponent() {
                 ref={(el) => {
                   mobileBrandRefs.current[idx] = el;
                 }}
-                className="absolute left-0 font-sans font-bold text-[28px] xs:text-[32px] sm:text-[36px] tracking-normal leading-tight text-[#f9f6f0] select-none cursor-pointer whitespace-nowrap origin-left pointer-events-auto max-w-full overflow-hidden text-ellipsis"
+                className="absolute left-0 font-sans font-bold text-[22px] xs:text-[25px] sm:text-[28px] tracking-normal leading-[1.08] text-[#f9f6f0] select-none cursor-pointer origin-left pointer-events-auto max-w-[44vw] overflow-visible"
                 onClick={() => scrollToBrandIndex(idx, true)}
                 style={{
                   transformStyle: "preserve-3d",
@@ -488,7 +489,7 @@ export default function SdgComponent() {
                   color: "#f9f6f0",
                 }}
               >
-                {brand.name}
+                {brand.displayName || brand.name}
               </div>
             ))}
           </div>

@@ -22,7 +22,7 @@ const faqData = [
   },
   {
     question: "What are the tracks and themes?",
-    answer: "The hackathon features tracks including Artificial Intelligence & Machine Learning, Web3 & Blockchain, FinTech, HealthTech, Sustainable Development Goals (SDG), and an Open Innovation category for general out-of-the-box ideas."
+    answer: "The hackathon features tracks including Fintech, Edtech, Healthcare, Blockchain for Social Good, Smart Infra, Supply Chain and Logistics, Environmental Sustainability, Cybersecurity & Defense System, and Open Innovation."
   },
   {
     question: "What prizes can we win?",
