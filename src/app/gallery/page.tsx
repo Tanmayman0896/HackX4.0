@@ -16,263 +16,266 @@ const getImageUrl = (imagePath: string) => {
 const RAW_PROJECTS = [
   {
     id: "02",
-    title: "Solar Archive",
-    category: "Experiential",
+    title: "Late Night Sprint",
+    category: "Hacking",
     image: "/assets/images/pic2_converted.avif",
-    description: "An immersive installation designed around the warmth, scale, and quiet wonder of a manufactured sun.",
+    description: "Intense late-night coding sessions as hackers build, test, and debug their prototypes under the clock.",
     hoverText: [
-      { text: "Oriens Lum" },
-      { text: "ina Walks" }
+      { text: "Late Night " },
+      { text: "Sprint" }
     ],
   },
   {
     id: "03",
-    title: "Soft Hardware",
-    category: "Brand Design",
+    title: "Team Synergy",
+    category: "Collaboration",
     image: "/assets/images/pic3_converted.avif",
-    description: "A tactile system that gives a small everyday object a generous, almost architectural presence.",
+    description: "Collaborative problem solving and creative teamwork at the hacker workstations.",
     hoverText: [
-      { text: "Soft Hardware " },
-      { text: "V2" }
+      { text: "Team " },
+      { text: "Synergy" }
     ],
   },
   {
     id: "04",
-    title: "Night Signals",
-    category: "Film",
+    title: "Organizing Team",
+    category: "Community",
     image: "/assets/images/pic4_converted.avif",
-    description: "A city-scale film installation that turns a familiar skyline into a live and luminous instrument.",
+    description: "The dedicated organizing team and student leads behind the seamless execution of MUJ HackX.",
     hoverText: [
-      { text: "Night " },
-      { text: "Signals" }
+      { text: "Organizing " },
+      { text: "Team" }
     ],
   },
   {
     id: "05",
-    title: "New Rituals",
-    category: "Campaign",
+    title: "Grand Inauguration",
+    category: "Ceremony",
     image: "/assets/images/pic6_converted.avif",
-    description: "A campaign study in slow gestures, dimensional light, and memorable forms of everyday connection.",
+    description: "Unveiling HackX with opening keynotes, prestigious university leaders, and cash prize announcements.",
     hoverText: [
-      { text: "New " },
-      { text: "Rituals" }
+      { text: "Grand " },
+      { text: "Inauguration" }
     ],
   },
   {
     id: "06",
-    title: "Half Light",
-    category: "CGI Production",
+    title: "Keynote Address",
+    category: "Keynote",
     image: "/assets/images/pic7_converted.avif",
-    description: "A monochrome image world that pairs quiet materiality with the restraint of editorial photography.",
+    description: "Inspiring speeches and mentorship from distinguished university leaders and technology pioneers.",
     hoverText: [
-      { text: "Half Light" }
+      { text: "Keynote " },
+      { text: "Address" }
     ],
   },
   {
     id: "07",
-    title: "Digital Genesis",
-    category: "CGI Production",
+    title: "Faculty Mentors",
+    category: "Guidance",
     image: "/assets/images/pic8_converted.avif",
-    description: "A generative exploration of abstract digital terrains and simulated ecosystems.",
+    description: "Dedicated faculty advisors guiding participants through the hackathon journey.",
     hoverText: [
-      { text: "Digital " },
-      { text: "Genesis" }
+      { text: "Faculty " },
+      { text: "Mentors" }
     ],
   },
   {
     id: "08",
-    title: "Echo Chamber",
-    category: "Experiential",
+    title: "Guest of Honour",
+    category: "Keynote",
     image: "/assets/images/pic9_converted.avif",
-    description: "An interactive sound installation reflecting the complexities of modern communication.",
+    description: "Distinguished guests sharing insights on the future of tech, entrepreneurship, and innovation.",
     hoverText: [
-      { text: "Echo Chamber" }
+      { text: "Guest of " },
+      { text: "Honour" }
     ],
   },
   {
     id: "09",
-    title: "Neon Pulse",
-    category: "Campaign",
+    title: "Faculty Felicitation",
+    category: "Recognition",
     image: "/assets/images/pic10_converted.avif",
-    description: "Vibrant visual aesthetics capturing the energy of late-night urban landscapes.",
+    description: "Honoring our faculty coordinators and mentors for their invaluable leadership and dedication.",
     hoverText: [
-      { text: "Neon" },
-      { text: " Pulse" }
+      { text: "Faculty " },
+      { text: "Felicitation" }
     ],
   },
   {
     id: "10",
-    title: "Quiet Form",
-    category: "Brand Design",
+    title: "Opening Address",
+    category: "Ceremony",
     image: "/assets/images/pic11_converted.avif",
-    description: "Minimalist brand identity focused on negative space and typographic clarity.",
+    description: "Welcoming hackers, mentors, and sponsors to MUJ's premier 36-hour hackathon.",
     hoverText: [
-      { text: "Quiet" },
-      { text: " Form" }
+      { text: "Opening " },
+      { text: "Address" }
     ],
   },
   {
     id: "11",
-    title: "Deep Current",
-    category: "Film",
+    title: "Mentorship Round",
+    category: "Mentorship",
     image: "/assets/images/pic12_converted.avif",
-    description: "A short film navigating the subconscious through fluid dynamics and underwater cinematography.",
+    description: "Industry experts providing 1-on-1 technical feedback, architecture reviews, and pitch guidance.",
     hoverText: [
-      { text: "Deep Current" }
+      { text: "Mentorship " },
+      { text: "Round" }
     ],
   },
   {
     id: "12",
-    title: "Prism Void",
-    category: "CGI Production",
+    title: "Victory Moment",
+    category: "Awards",
     image: "/assets/images/pic14_converted.avif",
-    description: "Volumetric light simulations refracting through impossible geometric objects.",
+    description: "Celebrating top performing hackathon teams awarded with certificates and prizes on stage.",
     hoverText: [
-      { text: "Prism " },
-      { text: "Void" }
+      { text: "Victory " },
+      { text: "Moment" }
     ],
   },
   {
     id: "13",
-    title: "Fluid Motion",
-    category: "Film",
+    title: "Lead Conveners",
+    category: "Leadership",
     image: "/assets/images/pic15_converted.avif",
-    description: "A study of liquid physics, momentum, and abstract kinetic motion.",
+    description: "Recognizing student conveners and core leads for orchestrating the event from start to finish.",
     hoverText: [
-      { text: "Fluid " },
-      { text: "Motion" }
+      { text: "Lead " },
+      { text: "Conveners" }
     ],
   },
   {
     id: "14",
-    title: "Kinetic Form",
-    category: "Experiential",
+    title: "Hardware Hacks",
+    category: "Innovation",
     image: "/assets/images/pic16_converted.avif",
-    description: "An installation translating mechanical motion into tactile, sculptural presence.",
+    description: "Autonomous drone systems and IoT hardware prototypes brought to life during the hackathon.",
     hoverText: [
-      { text: "Kinetic " },
-      { text: "Form" }
+      { text: "Hardware " },
+      { text: "Hacks" }
     ],
   },
   {
     id: "16",
-    title: "Monochrome Study",
-    category: "Brand Design",
+    title: "Media & Radio",
+    category: "Outreach",
     image: "/assets/images/image_converted.avif",
-    description: "Design experiment focusing purely on contrast, texture, and structural layouts.",
+    description: "Live event broadcasting and campus-wide media coverage in partnership with Radio Manipal.",
     hoverText: [
-      { text: "Mono" },
-      { text: "chrome" }
+      { text: "Media & " },
+      { text: "Radio" }
     ],
   },
   {
     id: "17",
-    title: "Future Shift",
-    category: "Campaign",
+    title: "Podium Finishers",
+    category: "Awards",
     image: "/assets/images/WhatsApp Image 2026-07-21 at 09.04.16_converted.avif",
-    description: "Bold marketing assets capturing the transition to next-generation interfaces.",
+    description: "Celebrating winning teams as they receive their grand cash prize cheques.",
     hoverText: [
-      { text: "Future " },
-      { text: "Shift" }
+      { text: "Podium " },
+      { text: "Finishers" }
     ],
   },
   {
     id: "18",
-    title: "Hidden Layer",
-    category: "CGI Production",
+    title: "Dignitary Panel",
+    category: "Ceremony",
     image: "/assets/images/WhatsApp Image 2026-07-21 at 09.04.16 (1)_converted.avif",
-    description: "Visualizing the unseen computational layers of neural networks and machine intelligence.",
+    description: "University leadership and esteemed guests seated at the opening ceremony.",
     hoverText: [
-      { text: "Hidden " },
-      { text: "Layer" }
+      { text: "Dignitary " },
+      { text: "Panel" }
     ],
   },
   {
     id: "19",
-    title: "Tactile Space",
-    category: "Experiential",
+    title: "Inaugural Speech",
+    category: "Keynote",
     image: "/assets/images/WhatsApp Image 2026-07-21 at 09.04.17_converted.avif",
-    description: "Physical spaces designed to react dynamically to touch, pressure, and proximity.",
+    description: "Setting the tone for 36 hours of non-stop creativity, code, and community.",
     hoverText: [
-      { text: "Tactile " },
-      { text: "Space" }
+      { text: "Inaugural " },
+      { text: "Speech" }
     ],
   },
   {
     id: "20",
-    title: "Quantum Shift",
-    category: "CGI Production",
+    title: "HackX Arena",
+    category: "Experience",
     image: "/assets/images/WhatsApp Image 2026-07-21 at 09.04.17 (1)_converted.avif",
-    description: "Simulating subatomic particle behaviors and light refraction fields.",
+    description: "Capturing memories at the iconic HackX experiential photo zone.",
     hoverText: [
-      { text: "Quantum " },
-      { text: "Shift" }
+      { text: "HackX " },
+      { text: "Arena" }
     ],
   },
   {
     id: "21",
-    title: "Spectral Glow",
-    category: "Campaign",
+    title: "The HackX Family",
+    category: "Community",
     image: "/assets/images/WhatsApp Image 2026-07-21 at 09.04.18_converted.avif",
-    description: "Prismatic color gradients designed to stand out in digital environments.",
+    description: "Over 50+ student organizers, volunteers, and faculty who made HackX a massive success.",
     hoverText: [
-      { text: "Spectral " },
-      { text: "Glow" }
+      { text: "The HackX " },
+      { text: "Family" }
     ],
   },
   {
     id: "22",
-    title: "Visual Rhythm",
-    category: "Film",
+    title: "Grand Champions",
+    category: "Awards",
     image: "/assets/images/WhatsApp Image 2026-07-21 at 09.04.18 (1)_converted.avif",
-    description: "Syncing rhythmic musical beats with custom procedural visuals.",
+    description: "Overall champion teams awarded with trophies and grand prize cheques on stage.",
     hoverText: [
-      { text: "Visual " },
-      { text: "Rhythm" }
+      { text: "Grand " },
+      { text: "Champions" }
     ],
   },
   {
     id: "23",
-    title: "Silent Echo",
-    category: "Experiential",
+    title: "Full House",
+    category: "Audience",
     image: "/assets/images/WhatsApp Image 2026-07-21 at 09.04.18 (2)_converted.avif",
-    description: "An installation designed around the resonance and echo of quiet places.",
+    description: "An auditorium packed with enthusiastic student developers from across the nation.",
     hoverText: [
-      { text: "Silent " },
-      { text: "Echo" }
+      { text: "Full " },
+      { text: "House" }
     ],
   },
   {
     id: "24",
-    title: "Static Frame",
-    category: "Brand Design",
+    title: "Main Stage",
+    category: "Ceremony",
     image: "/assets/images/WhatsApp Image 2026-07-21 at 09.04.19_converted.avif",
-    description: "Clean typographical and layout designs exploring grid-based minimalism.",
+    description: "The central stage where ideas were pitched, demos were judged, and champions were crowned.",
     hoverText: [
-      { text: "Static " },
-      { text: "Frame" }
+      { text: "Main " },
+      { text: "Stage" }
     ],
   },
   {
     id: "25",
-    title: "Infinite Loop",
-    category: "CGI Production",
+    title: "Hackathon Spirit",
+    category: "Audience",
     image: "/assets/images/WhatsApp Image 2026-07-21 at 09.04.19 (1)_converted.avif",
-    description: "Seamlessly looping 3D renders exploring perpetual motions.",
+    description: "Hundreds of innovators united by their passion to build transformative technologies.",
     hoverText: [
-      { text: "Infinite " },
-      { text: "Loop" }
+      { text: "Hackathon " },
+      { text: "Spirit" }
     ],
   },
   {
     id: "27",
-    title: "Chroma Field",
-    category: "CGI Production",
+    title: "Builder Mindset",
+    category: "Hacking",
     image: "/assets/images/WhatsApp Image 2026-07-21 at 10.01.12 copy.jpeg",
-    description: "Prismatic shader fields shifting based on camera proximity.",
+    description: "The grit, focus, and dedication of hackers turning vision into code.",
     hoverText: [
-      { text: "Chroma " },
-      { text: "Field" }
+      { text: "Builder " },
+      { text: "Mindset" }
     ],
   },
 ];
