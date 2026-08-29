@@ -196,7 +196,7 @@ export default function Team() {
         <div className="flex flex-col items-center gap-4 mb-12 pb-4">
           {/* Category Filter */}
           <div className="flex items-center justify-center gap-6 sm:gap-10 pt-2">
-            {(["FACULTY", "EXECUTIVE", "CORE"] as TeamCategory[]).map((cat) => (
+            {(/* ["FACULTY", "EXECUTIVE", "CORE"] */ ["EXECUTIVE", "CORE"] as TeamCategory[]).map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
@@ -219,11 +219,12 @@ export default function Team() {
         </div>
 
         {/* Team Grid Grouped by Subheadings or Coming Soon */}
-        {selectedCategory === "FACULTY" ? (
+        {/* {selectedCategory === "FACULTY" ? (
           <div className="text-center py-24 text-white/60 text-lg sm:text-xl font-bold tracking-widest uppercase">
             Coming Soon..
           </div>
-        ) : subTeamGroups.length > 0 ? (
+        ) : */}
+        {subTeamGroups.length > 0 ? (
           <div className="space-y-20 md:space-y-24 lg:space-y-28">
             {subTeamGroups.map((group) => (
               <div key={group.title} className="flex flex-col gap-6">
