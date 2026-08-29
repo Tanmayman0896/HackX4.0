@@ -154,18 +154,20 @@ export default function Ambassador() {
       </section>
 
       {/* Join Campus Ambassador Banner Section */}
-      <section id="join-ambassador" className="relative w-full z-10 pt-2 pb-0 -mb-6 md:-mb-10">
+      <section id="join-ambassador" className="relative w-full z-10 py-10 md:py-16">
         <JoinHackathon
+          id="apply"
           title="Become the"
           highlightText="Campus Ambassador!"
-          href="#apply"
+          href="https://hackxmuj.com/ambassador"
           buttonText="Register now"
           subText=""
+          className="my-0 py-0"
         />
       </section>
 
       {/* FAQ Component Section */}
-      <section id="faq" className="relative w-full z-10">
+      <section id="faq" className="relative w-full z-10 pt-4 md:pt-8 pb-12">
         <FAQ
           data={AMBASSADOR_FAQ_DATA}
           heading={

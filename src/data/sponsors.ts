@@ -70,24 +70,24 @@ export const GRID_SPONSORS: Sponsor[] = [
     name: "Balaji Wafers",
     logo: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1787685986328_l1s5dx.avif",
   },
-  // 10. Project Vanguard BPHC
+  /*/ 10. Project Vanguard BPHC
   {
     id: 10,
     name: "Project Vanguard BPHC",
     logo: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1787685993967_qxcfhm.avif",
-  },
-  // 11. BunkToBrains
+  },*/
+  // 11. Eventopia
   {
     id: 11,
-    name: "BunkToBrains",
-    logo: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1787686001247_kmxj87.avif",
+    name: "Eventopia",
+    logo: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1787686059975_m7qt9.avif",
   },
-  // 12. Cipher LNMIIT
+  /* 12. Cipher LNMIIT
   {
     id: 12,
     name: "Cipher LNMIIT",
     logo: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1787686011685_o7okwp.avif",
-  },
+  },*/
   // 13. Coding Blocks
   {
     id: 13,

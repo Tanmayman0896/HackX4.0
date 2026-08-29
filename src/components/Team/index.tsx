@@ -5,14 +5,13 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 import { useLenis } from "lenis/react";
 import NetflixCurtainBackground from "@/components/NetflixCurtainBackground/NetflixCurtainBackground";
 import { TeamCard } from "./TeamCard";
-import { TEAM_MEMBERS, TeamYear, TeamCategory, TeamMember } from "@/data/team";
+import { TEAM_MEMBERS, TeamCategory, TeamMember } from "@/data/team";
 
 export default function Team() {
   const containerRef = useRef<HTMLDivElement>(null);
   const scrollYProgress = useMotionValue(0);
   const lenis = useLenis();
 
-  const [selectedYear, setSelectedYear] = useState<TeamYear>("2026");
   const [selectedCategory, setSelectedCategory] = useState<TeamCategory>("EXECUTIVE");
 
   const [isMobile, setIsMobile] = useState(false);
@@ -98,9 +97,9 @@ export default function Team() {
 
   const currentMembers = useMemo(() => {
     return allMembers.filter(
-      (m) => m.year === selectedYear && m.category === selectedCategory
+      (m) => m.year === "2026" && m.category === selectedCategory
     );
-  }, [allMembers, selectedYear, selectedCategory]);
+  }, [allMembers, selectedCategory]);
 
   const subTeamGroups = useMemo(() => {
     const groups: { title: string; members: TeamMember[] }[] = [];
@@ -120,15 +119,6 @@ export default function Team() {
 
     return groups;
   }, [currentMembers]);
-
-  const handleYearSelect = (year: TeamYear) => {
-    if (year === "2024" && (selectedCategory === "CORE" || selectedCategory === "FACULTY")) {
-      setSelectedCategory("EXECUTIVE");
-    } else if (year === "2025" && selectedCategory === "CORE") {
-      setSelectedCategory("FACULTY");
-    }
-    setSelectedYear(year);
-  };
 
   return (
     <div className="relative min-h-screen-stable text-white bg-[#070312] overflow-x-clip">
@@ -204,37 +194,9 @@ export default function Team() {
       <div className="relative z-30 w-full max-w-5xl mx-auto px-4 sm:px-6 md:px-8 -mt-[60vh] pb-32">
         {/* Filter Controls (Fixed above cards) */}
         <div className="flex flex-col items-center gap-4 mb-12 pb-4">
-          {/* Year Selector (2026, 2025, 2024) */}
-          <div className="flex items-center justify-center gap-6 sm:gap-10">
-            {(["2026", "2025", "2024"] as const).map((year) => (
-              <button
-                key={year}
-                onClick={() => handleYearSelect(year)}
-                className={`text-xl sm:text-3xl font-black tracking-widest uppercase transition-all duration-300 relative px-2 py-1 ${
-                  selectedYear === year
-                    ? "text-white scale-110"
-                    : "text-white/35 hover:text-white/70"
-                }`}
-              >
-                {year}
-                {selectedYear === year && (
-                  <motion.div
-                    layoutId="activeYearUnderline"
-                    className="absolute bottom-0 left-0 right-0 h-[2.5px] bg-white rounded-full"
-                  />
-                )}
-              </button>
-            ))}
-          </div>
-
-          {/* Sub-Category Filter */}
+          {/* Category Filter */}
           <div className="flex items-center justify-center gap-6 sm:gap-10 pt-2">
-            {(selectedYear === "2026"
-              ? (["FACULTY", "EXECUTIVE", "CORE"] as TeamCategory[])
-              : selectedYear === "2025"
-              ? (["FACULTY", "EXECUTIVE"] as TeamCategory[])
-              : (["EXECUTIVE"] as TeamCategory[])
-            ).map((cat) => (
+            {(/* ["FACULTY", "EXECUTIVE", "CORE"] */ ["EXECUTIVE", "CORE"] as TeamCategory[]).map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
@@ -257,11 +219,12 @@ export default function Team() {
         </div>
 
         {/* Team Grid Grouped by Subheadings or Coming Soon */}
-        {selectedYear === "2026" && selectedCategory === "FACULTY" ? (
+        {/* {selectedCategory === "FACULTY" ? (
           <div className="text-center py-24 text-white/60 text-lg sm:text-xl font-bold tracking-widest uppercase">
             Coming Soon..
           </div>
-        ) : subTeamGroups.length > 0 ? (
+        ) : */}
+        {subTeamGroups.length > 0 ? (
           <div className="space-y-20 md:space-y-24 lg:space-y-28">
             {subTeamGroups.map((group) => (
               <div key={group.title} className="flex flex-col gap-6">
@@ -289,7 +252,7 @@ export default function Team() {
           </div>
         ) : (
           <div className="text-center py-20 text-white/40 text-sm font-medium tracking-wider">
-            No team members listed for {selectedCategory} in {selectedYear}.
+            No team members listed for {selectedCategory}.
           </div>
         )}
       </div>

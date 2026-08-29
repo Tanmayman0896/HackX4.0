@@ -13,6 +13,9 @@ export const coreMembers: TeamMember[] = [
     subTeam: "TECHNICAL TEAM",
     initials: "VK",
     image: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/team/vidhyanshu-kumar.avif",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/viidhyanshu/",
+    },
   },
   {
     id: "2026-core-tech-2",
