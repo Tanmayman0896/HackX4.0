@@ -55,6 +55,7 @@ export const coreMembers: TeamMember[] = [
     category: "CORE",
     subTeam: "TECHNICAL TEAM",
     initials: "DS",
+    image: "https://pub-2b91df05320148438318902a8dc7795b.r2.dev/team-photos/divya-srivastava.avif",
   },
 
   // 2. CONTENT TEAM
@@ -128,6 +129,7 @@ export const coreMembers: TeamMember[] = [
     category: "CORE",
     subTeam: "CURATIONS TEAM",
     initials: "TK",
+    image: "https://pub-2b91df05320148438318902a8dc7795b.r2.dev/team-photos/tejas-kaur.avif",
   },
   {
     id: "2026-core-curations-5",
@@ -333,6 +335,7 @@ export const coreMembers: TeamMember[] = [
     category: "CORE",
     subTeam: "MEDIA & COVERAGE TEAM",
     initials: "RB",
+    image: "https://pub-2b91df05320148438318902a8dc7795b.r2.dev/team-photos/riya-bisht.avif",
   },
   {
     id: "2026-core-media-2",
@@ -352,6 +355,7 @@ export const coreMembers: TeamMember[] = [
     category: "CORE",
     subTeam: "MEDIA & COVERAGE TEAM",
     initials: "PG",
+    image: "https://pub-2b91df05320148438318902a8dc7795b.r2.dev/team-photos/prakhar-gupta.avif",
   },
   {
     id: "2026-core-media-4",
@@ -361,6 +365,7 @@ export const coreMembers: TeamMember[] = [
     category: "CORE",
     subTeam: "MEDIA & COVERAGE TEAM",
     initials: "DC",
+    image: "https://pub-2b91df05320148438318902a8dc7795b.r2.dev/team-photos/dwijesh-chilukuri.avif",
   },
   {
     id: "2026-core-media-5",
@@ -370,6 +375,7 @@ export const coreMembers: TeamMember[] = [
     category: "CORE",
     subTeam: "MEDIA & COVERAGE TEAM",
     initials: "P",
+    image: "https://pub-2b91df05320148438318902a8dc7795b.r2.dev/team-photos/pranjal.avif",
   },
 
   // 8. OPERATIONS TEAM
@@ -411,6 +417,7 @@ export const coreMembers: TeamMember[] = [
     category: "CORE",
     subTeam: "OPERATIONS TEAM",
     initials: "AR",
+    image: "https://pub-2b91df05320148438318902a8dc7795b.r2.dev/team-photos/aditi-rai.avif",
   },
   {
     id: "2026-core-ops-5",
@@ -440,6 +447,7 @@ export const coreMembers: TeamMember[] = [
     category: "CORE",
     subTeam: "OPERATIONS TEAM",
     initials: "AU",
+    image: "https://pub-2b91df05320148438318902a8dc7795b.r2.dev/team-photos/amisha-upadhyay.avif",
   },
   {
     id: "2026-core-ops-8",
@@ -459,6 +467,7 @@ export const coreMembers: TeamMember[] = [
     category: "CORE",
     subTeam: "OPERATIONS TEAM",
     initials: "AK",
+    image: "https://pub-2b91df05320148438318902a8dc7795b.r2.dev/team-photos/aarav-khurana.avif",
   },
   {
     id: "2026-core-ops-10",
@@ -468,6 +477,7 @@ export const coreMembers: TeamMember[] = [
     category: "CORE",
     subTeam: "OPERATIONS TEAM",
     initials: "YS",
+    image: "https://pub-2b91df05320148438318902a8dc7795b.r2.dev/team-photos/yuvika-sachdeva.avif",
   },
   {
     id: "2026-core-ops-11",
@@ -505,6 +515,7 @@ export const coreMembers: TeamMember[] = [
     category: "CORE",
     subTeam: "OPERATIONS TEAM",
     initials: "SL",
+    image: "https://pub-2b91df05320148438318902a8dc7795b.r2.dev/team-photos/saanvi-lepcha.avif",
   },
   {
     id: "2026-core-ops-15",
@@ -576,6 +587,7 @@ export const coreMembers: TeamMember[] = [
     category: "CORE",
     subTeam: "SOCIAL MEDIA TEAM",
     initials: "GS",
+    image: "https://pub-2b91df05320148438318902a8dc7795b.r2.dev/team-photos/gunjita-saxena.avif",
   },
   {
     id: "2026-core-social-3",
