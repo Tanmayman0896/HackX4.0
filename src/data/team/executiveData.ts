@@ -237,16 +237,12 @@ export const executiveMembers: TeamMember[] = [
   },
   {
     id: "2026-exec-hospitality-3",
-    name: "Shubhanshu Dixit",
+    name: "Garv Sharma",
     role: "Executive",
     year: "2026",
     category: "EXECUTIVE",
     subTeam: "HOSPITALITY TEAM",
-    image: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1785956811325_2krm0s.png",
-    socials: {
-      instagram: "https://instagram.com/sh3bhhh",
-      linkedin: "https://www.linkedin.com/in/shubhanshu-dixit-a768552b2",
-    },
+    image: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1788081902650_b7qvh8.avif",
   },
 
   // 8. MARKETING TEAM
@@ -289,19 +285,7 @@ export const executiveMembers: TeamMember[] = [
       linkedin: "https://linkedin.com/in/aarushisingh27",
     },
   },
-  {
-    id: "2026-exec-marketing-4",
-    name: "Ashutosh Abhijit Lotlikar",
-    role: "Executive",
-    year: "2026",
-    category: "EXECUTIVE",
-    subTeam: "MARKETING TEAM",
-    image: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/ecs/ashutosh-lotlikar.avif",
-    socials: {
-      instagram: "https://instagram.com/ashutosh_lotli",
-      linkedin: "https://www.linkedin.com/in/ashutosh-lotlikar-876a00354",
-    },
-  },
+
 
   // 9. MEDIA & COVERAGE TEAM
   {
@@ -395,19 +379,6 @@ export const executiveMembers: TeamMember[] = [
   },
   {
     id: "2026-exec-ops-4",
-    name: "Keshav Anand",
-    role: "Executive",
-    year: "2026",
-    category: "EXECUTIVE",
-    subTeam: "OPERATIONS TEAM",
-    image: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/ecs/keshav-anand.avif",
-    socials: {
-      instagram: "https://www.instagram.com/keshav_anand_21",
-      linkedin: "https://www.linkedin.com/in/keshav-anand-479712327",
-    },
-  },
-  {
-    id: "2026-exec-ops-5",
     name: "Aarush Chandra",
     role: "Executive",
     year: "2026",
@@ -420,30 +391,22 @@ export const executiveMembers: TeamMember[] = [
     },
   },
   {
-    id: "2026-exec-ops-6",
-    name: "Tansi Shukla",
+    id: "2026-exec-ops-5",
+    name: "Rudra Bhardwaj",
     role: "Executive",
     year: "2026",
     category: "EXECUTIVE",
     subTeam: "OPERATIONS TEAM",
-    image: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/ecs/tansi-shukla.avif",
-    socials: {
-      instagram: "https://www.instagram.com/tanxsi_",
-      linkedin: "https://www.linkedin.com/in/tansi-shukla-951846273",
-    },
+    image: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1788081910235_4bf53a.avif",
   },
   {
-    id: "2026-exec-ops-7",
-    name: "Arunanshu Basu",
+    id: "2026-exec-ops-6",
+    name: "Abhishek Vinayak",
     role: "Executive",
     year: "2026",
     category: "EXECUTIVE",
     subTeam: "OPERATIONS TEAM",
-    image: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/ecs/arunanshu-basu.avif",
-    socials: {
-      instagram: "https://instagram.com/Thisisarunanshu",
-      linkedin: "https://www.linkedin.com/in/arunanshu-basu",
-    },
+    image: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1788081927336_e5jayt.avif",
   },
 
   // 11. SOCIAL MEDIA TEAM
@@ -473,19 +436,7 @@ export const executiveMembers: TeamMember[] = [
       linkedin: "https://www.linkedin.com/in/drishti-verma-240b2b302",
     },
   },
-  {
-    id: "2026-exec-social-3",
-    name: "Srinivas Kharpade",
-    role: "Executive",
-    year: "2026",
-    category: "EXECUTIVE",
-    subTeam: "SOCIAL MEDIA TEAM",
-    image: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/ecs/shrinivas-kharpade.avif",
-    socials: {
-      instagram: "https://www.instagram.com/shrinivask.05",
-      linkedin: "https://www.linkedin.com/in/shrinivas-kharpade-856285336",
-    },
-  },
+
 
   // 12. SPONSORSHIP & FINANCE TEAM
   {
@@ -514,23 +465,7 @@ export const executiveMembers: TeamMember[] = [
       linkedin: "https://www.linkedin.com/in/harshxv14",
     },
   },
-  {
-    id: "2026-exec-sponsorship-3",
-    name: "Navya Bhardwaj",
-    role: "Executive",
-    year: "2026",
-    category: "EXECUTIVE",
-    subTeam: "SPONSORSHIP & FINANCE TEAM",
-    image: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1785955235565_c1rttp.jpg",
-  },
-  {
-    id: "2026-exec-sponsorship-4",
-    name: "Aadrit Kaushik",
-    role: "Executive",
-    year: "2026",
-    category: "EXECUTIVE",
-    subTeam: "SPONSORSHIP & FINANCE TEAM",
-  },
+
 
   // ── 2025 EXECUTIVE ──
 
