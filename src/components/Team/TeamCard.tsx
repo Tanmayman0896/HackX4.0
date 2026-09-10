@@ -15,7 +15,8 @@ export const TeamCard: React.FC<TeamCardProps> = React.memo(({ member, index = 0
 
   const getInitials = (name: string) => {
     if (member.initials) return member.initials;
-    return name
+    const clean = name.replace(/^(Dr\.|Mr\.|Ms\.|Mrs\.|Prof\.)\s+/i, "");
+    return clean
       .split(" ")
       .map((n) => n[0])
       .join("")
