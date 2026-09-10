@@ -118,12 +118,7 @@ export const GRID_SPONSORS: Sponsor[] = [
     name: "Ecofy",
     logo: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1787686052944_yj5kg.avif",
   },
-  // 18. Eventopia
-  {
-    id: 18,
-    name: "Eventopia",
-    logo: "https://pub-45c102ac14a64011a530ed2864a18405.r2.dev/hackx/1787686059975_m7qt9.avif",
-  },
+  
   // 19. HackerRank
   {
     id: 19,
