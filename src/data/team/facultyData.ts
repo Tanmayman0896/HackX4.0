@@ -104,6 +104,7 @@ const rawFacultyList: FacultyRawData[] = [
     name: "Dr. Sushama Tanwar",
     role: "Faculty Coordinator",
     subTeam: "FACULTY CO-ORDINATORS",
+    image: "/assets/faculty/dr-sushama-tanwar.jpeg",
     initials: "ST",
   },
   {
@@ -125,6 +126,7 @@ const rawFacultyList: FacultyRawData[] = [
     name: "Dr. Amandeep Cheema",
     role: "Faculty Coordinator",
     subTeam: "FACULTY CO-ORDINATORS",
+    image: "/assets/faculty/dr-amandeep-cheema.jpeg",
     initials: "AC",
   },
   {
@@ -185,12 +187,14 @@ const rawFacultyList: FacultyRawData[] = [
     name: "Ms. Soni Gupta",
     role: "Faculty Coordinator",
     subTeam: "FACULTY CO-ORDINATORS",
+    image: "/assets/faculty/dr-soni-gupta.jpeg",
     initials: "SG",
   },
   {
     name: "Dr. Kumar Shashvat",
     role: "Faculty Coordinator",
     subTeam: "FACULTY CO-ORDINATORS",
+    image: "/assets/faculty/dr-kumar-shashvat.jpeg",
     initials: "KS",
   },
   {
@@ -236,6 +240,7 @@ const rawFacultyList: FacultyRawData[] = [
     name: "Dr. Arshpreet Kaur",
     role: "Faculty Coordinator",
     subTeam: "FACULTY CO-ORDINATORS",
+    image: "/assets/faculty/dr-arshpreet-kaur.jpeg",
     initials: "AK",
   },
   {
