@@ -107,7 +107,7 @@ export default function Home() {
               <motion.div variants={lineVariants} className="flex items-center justify-between w-full gap-3 sm:gap-4">
                 <div className="h-[1.5px] flex-1 bg-[#F0ABFC]" />
                 <span className="font-serif font-normal normal-case tracking-wide text-lg sm:text-2xl md:text-3xl lg:text-[2.2rem] leading-normal text-white whitespace-nowrap pt-0.5 pb-2 pr-4 inline-block flex-shrink-0">
-                  MUJ&apos;s Largest Hackathon!
+                  MUJ&apos;s Hackathon!
                 </span>
               </motion.div>
             </div>
