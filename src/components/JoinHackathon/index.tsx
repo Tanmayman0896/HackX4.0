@@ -36,9 +36,9 @@ export default function JoinHackathon({
   id = "register",
   title = "Join the",
   highlightText = "Hackathon!",
-  href = "https://hackxmuj.com/register",
-  buttonText = "Register now",
-  subText = "Round 1 registration is free. Selected teams will need to pay ₹999 per team.",
+  href = "https://drive.google.com/file/d/1RgRl5GDGWejv-DXj5DMq9Jpoyz5BcsVT/view?usp=sharing",
+  buttonText = "Problem Statement",
+  subText = "",
   className,
 }: JoinHackathonProps) {
   return (
@@ -84,6 +84,8 @@ export default function JoinHackathon({
           <div className="flex flex-col items-start md:items-end gap-2 shrink-0">
             <a
               href={href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full border px-5 py-3 font-sans text-[11px] font-extrabold uppercase tracking-[0.16em] text-[#10051f] hover:-translate-y-1 hover:border-white hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:px-6"
               style={BUTTON_STYLE}
               aria-label={`${buttonText} - ${title} ${highlightText}`}
